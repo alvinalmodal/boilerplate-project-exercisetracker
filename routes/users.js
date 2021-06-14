@@ -71,9 +71,9 @@ router.post("/:_id/exercises", async (req, res) => {
     res.send({
       _id: newUser._id,
       username: newUser.username,
-      description,
+      date: newDate,
       duration,
-      date,
+      description,
     });
   } catch (error) {
     res.send(error.message);
