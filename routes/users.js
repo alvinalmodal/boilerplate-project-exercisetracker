@@ -82,7 +82,7 @@ router.post("/:_id/exercises", async (req, res) => {
       _id: newUser._id,
       username: newUser.username,
       date: formatDate(newDate),
-      duration,
+      newDuration,
       description,
     });
   } catch (error) {
